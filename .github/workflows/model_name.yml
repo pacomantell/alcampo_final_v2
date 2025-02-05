@@ -1,13 +1,13 @@
 name: remane model
 
 on:
-workflow_dispatch:
-push:
+ workflow_dispatch:
+ push:
     branches: [test, production]
 permissions:
-contents: write
+  contents: write
 jobs:
-build:
+ build:
     runs-on: ubuntu-latest
 
     steps:
