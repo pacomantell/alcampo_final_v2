@@ -12,19 +12,19 @@ build:
 
     steps:
     - name: Checkout repository
-        uses: actions/checkout@v2
+      uses: actions/checkout@v2
 
     - name: Rename file in test
-        if: github.ref == 'refs/heads/test'
-        run: mv models/alcampo_final_dev.model.lkml models/alcampo_final_test.model.lkml
+      if: github.ref == 'refs/heads/test'
+      run: mv models/alcampo_final_dev.model.lkml models/alcampo_final_test.model.lkml
         
     - name: Rename file in production
-        if: github.ref == 'refs/heads/production'
-        run: mv models/alcampo_final_test.model.lkml models/alcampo_final.model.lkml
+      if: github.ref == 'refs/heads/production'
+      run: mv models/alcampo_final_test.model.lkml models/alcampo_final.model.lkml
 
     - name: Push Changes
-        run: |
-        git config --global user.name '[USERNAME]'
+      run: |
+        git config --global user.name 'pacomantell'
         git config --global user.email '[USER_EMAIL]'
         git add -A
         git commit -am "Change filename"
