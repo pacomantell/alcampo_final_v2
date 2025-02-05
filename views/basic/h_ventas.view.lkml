@@ -29,4 +29,10 @@ view: h_ventas {
   measure: count {
     type: count
   }
+
+  measure: sum_ventas {
+    type: sum
+    label: "Ventas Totales"
+    sql: ${TABLE}.ventas ;;
+  }
 }
