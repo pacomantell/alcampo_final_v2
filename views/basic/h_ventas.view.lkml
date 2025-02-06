@@ -35,4 +35,10 @@ view: h_ventas {
     label: "Ventas Totales"
     sql: ${TABLE}.ventas ;;
   }
+
+  measure: min_ventas {
+    type: min
+    label: "Minimo de Ventas"
+    sql: ${TABLE}.ventas ;;
+  }
 }
