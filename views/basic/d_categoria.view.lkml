@@ -9,7 +9,7 @@ view: d_categoria {
   }
   dimension: id_categoria {
     type: number
-      label: "ID"
+    label: "ID"
     group_label: "Categoria"
     sql: ${TABLE}.id_categoria ;;
   }
