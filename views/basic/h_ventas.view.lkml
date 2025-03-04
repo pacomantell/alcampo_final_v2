@@ -3,7 +3,7 @@ view: h_ventas {
 
   dimension: id_categoria {
     type: number
-    hidden: yes
+    hidden: no
     sql: ${TABLE}.id_categoria ;;
   }
   dimension: id_fecha {
