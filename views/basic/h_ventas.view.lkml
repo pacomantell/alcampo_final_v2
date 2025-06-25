@@ -32,7 +32,7 @@ view: h_ventas {
 
   measure: sum_ventas {
     type: sum
-    label: "Ventas Totales"
+    label: "Suma Ventas Totales"
     sql: ${TABLE}.ventas ;;
   }
 
