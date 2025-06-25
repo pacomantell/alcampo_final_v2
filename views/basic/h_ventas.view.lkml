@@ -3,7 +3,7 @@ view: h_ventas {
 
   dimension: id_categoria {
     type: number
-    hidden: yes
+    hidden: no
     sql: ${TABLE}.id_categoria ;;
   }
   dimension: id_fecha {
@@ -32,7 +32,7 @@ view: h_ventas {
 
   measure: sum_ventas {
     type: sum
-    label: "Ventas Totales"
+    label: "Suma Ventas Totales"
     sql: ${TABLE}.ventas ;;
   }
 
